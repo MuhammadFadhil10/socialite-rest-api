@@ -70,7 +70,7 @@ app.use(userRoutes);
 app.use(messageRoutes);
 
 // const httpServer = createServer();
-const httpServer = app.listen(process.env.PORT || 5000, () => {
+const httpServer = app.listen(process.env.PORT, () => {
 	console.log('Server listening');
 });
 const io = Io.init(httpServer, {
